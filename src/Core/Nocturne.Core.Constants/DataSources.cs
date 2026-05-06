@@ -67,6 +67,11 @@ public static class DataSources
     public const string TidepoolConnector = "tidepool-connector";
 
     /// <summary>
+    /// Data fetched from Twiist Insight follower API via the Twiist connector.
+    /// </summary>
+    public const string TwiistConnector = "twiist-connector";
+
+    /// <summary>
     /// Data fetched from Tandem Source via the TConnectSync connector.
     /// </summary>
     public const string TConnectSyncConnector = "tconnectsync-connector";
@@ -226,6 +231,7 @@ public static class DataSources
                 or GlookoConnector
                 or NightscoutConnector
                 or TidepoolConnector
+                or TwiistConnector
                 or TConnectSyncConnector
                 or HomeAssistantConnector
                 or EversenseConnector
@@ -291,6 +297,7 @@ public static class DataSources
             GlookoConnector,
             NightscoutConnector,
             TidepoolConnector,
+            TwiistConnector,
             TConnectSyncConnector,
             HomeAssistantConnector,
             EversenseConnector,

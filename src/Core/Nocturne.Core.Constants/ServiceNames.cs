@@ -90,6 +90,12 @@ public static class ServiceNames
     public const string TidepoolConnector = "tidepool-connector";
 
     /// <summary>
+    /// Aspire resource name for the Twiist Insight follower connector service.
+    /// </summary>
+    /// <seealso cref="DataSources.TwiistConnector"/>
+    public const string TwiistConnector = "twiist-connector";
+
+    /// <summary>
     /// Aspire resource name for the Home Assistant connector service.
     /// </summary>
     /// <seealso cref="DataSources.HomeAssistantConnector"/>

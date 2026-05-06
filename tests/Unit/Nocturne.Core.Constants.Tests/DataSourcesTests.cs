@@ -29,4 +29,12 @@ public class DataSourcesTests
     {
         DataSources.GetDefaultUpdateIntervalMinutes(null).Should().Be(5);
     }
+
+    [Fact]
+    public void TwiistConnector_IsKnownConnector()
+    {
+        DataSources.TwiistConnector.Should().Be("twiist-connector");
+        DataSources.IsConnector(DataSources.TwiistConnector).Should().BeTrue();
+        DataSources.All.Should().Contain(DataSources.TwiistConnector);
+    }
 }

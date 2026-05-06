@@ -13,6 +13,7 @@ public enum ConnectSource
     Glooko,
     MyLife,
     Tidepool,
+    Twiist,
     MyFitnessPal,
     Nightscout,
     HomeAssistant,
