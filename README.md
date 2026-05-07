@@ -125,6 +125,7 @@ Nocturne includes native connectors for popular diabetes platforms:
 | **MyFitnessPal**     | Food and nutrition tracking          | Supported |
 | **Nightscout**       | Nightscout-to-Nightscout sync        | Supported |
 | **MyLife**           | Syncing for MyLife / CamAPS FX       | Supported |
+| **Twiist Insiight**  | Twiist AID data via Insiights API    | Supported |
 
 ### Using Connectors
 
@@ -214,7 +215,7 @@ Nocturne is licensed under the [GNU Affero General Public License v3.0 (AGPL-3.0
 
 ### Disclaimer
 
-Nocturne is a community project and is not affiliated with or endorsed by the Nightscout Project, Abbott, Dexcom, Medtronic, Glooko, or MyFitnessPal.
+Nocturne is a community project and is not affiliated with or endorsed by the Nightscout Project, Abbott, Dexcom, Medtronic, Glooko, MyFitnessPal, Twiist, or Sequel Med Tech.
 
 **Important:** This software is provided as-is for personal use. Always verify glucose readings with approved medical devices. Never make treatment decisions based solely on data from this application.
 
