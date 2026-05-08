@@ -84,4 +84,29 @@ public class TwiistModelDeserializationTests
         meal.Grams.Should().Be(42.5m);
         meal.AssociatedBolusIds.Should().ContainSingle("dose-xyz");
     }
+
+    [Fact]
+    public void Package_WithActiveEventObjects_Deserializes()
+    {
+        const string json = """
+        {
+          "pwdId":"72826af6-68c9-4d6f-8f98-2ec2b07acda3",
+          "pwdNickname":"Test Person",
+          "status":{
+            "activeEvents":[
+              {"id":"event-1","type":"alarm","source":"pump"}
+            ]
+          }
+        }
+        """;
+
+        var package = JsonSerializer.Deserialize<TwiistPackage>(json, TwiistJson.Options);
+
+        package!.Status.ActiveEvents.Should().ContainSingle();
+        var activeEvent = package.Status.ActiveEvents![0];
+        activeEvent.Id.Should().Be("event-1");
+        activeEvent.Type.Should().Be("alarm");
+        activeEvent.Source.Should().Be("pump");
+        activeEvent.Timestamp.Should().BeNull();
+    }
 }

@@ -32,7 +32,7 @@ public class TwiistStatus
     public List<TwiistEvent>? Events { get; set; }
 
     [JsonPropertyName("activeEvents")]
-    public List<string>? ActiveEvents { get; set; }
+    public List<TwiistEvent>? ActiveEvents { get; set; }
 
     [JsonPropertyName("insulinHistory")]
     public List<TwiistInsulinDose>? InsulinHistory { get; set; }
